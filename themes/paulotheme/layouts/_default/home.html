@@ -1,0 +1,13 @@
+{{ define "main" }}
+  {{ .Content }}
+  {{ range where .Site.RegularPages "Section" "in" .Site.MainSections }}
+  <div class="card mb-1">
+    <div class="card-body">
+      <div class="card-title display-5"><a href="{{ .RelPermalink }}">{{.LinkTitle }}</a></div>
+      {{ with .Summary}}
+        <div class="card-text text-truncate">{{ . }}</div>
+      {{ end }}
+    </div>
+  </div>
+  {{ end }}
+{{ end }}

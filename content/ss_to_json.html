@@ -1,0 +1,46 @@
++++
+title = 'Сделай ключи Outline нормальными снова'
+date = 2024-08-01T13:19:23+02:00
+draft = false
+tags = ["instrument"]
++++
+
+  <div class="mt-2 row">
+    <p>Загружай ключ Outline, который начинается на ss://</p>
+    <p>Используется эта библиотека для расшифровки и перевода в json: <a class="link-dark" href="https://github.com/Paulo1312/ss_to_json_outline_rust">https://github.com/Paulo1312/ss_to_json_outline_rust</a></p>
+    <p>Все вычисления происходят на твоём устройстве. Если не доверяешь - можешь воспользоваться десктопной программой (Консольной) <a class="link-dark" href="https://github.com/Paulo1312/ss_to_json_outline_rust">https://github.com/Paulo1312/ss_to_json_outline_rust</a></p>
+    <p>Либо скачать сайт и запустить у себя на устройстве</p>
+    <script src="./bootstrap.js"></script>
+  </div>
+  <hr>
+  <div class="row container bg-dark m-2 p-3">
+    <div class="row">
+      <p class="display-3 text-light">
+SS TO JSON
+      </p>
+    </div>
+    <div class="row">
+      <div class="col mb-3">
+        <label for="formFile" class="form-label text-light">Твой конфиг-ключ от Outline  </label>
+        <input class="form-control" type="text" id="text1">
+      </div>
+      <div class="row">
+        <div class="col mb-3">
+          <label for="text_address" class="form-label text-light">Локальный адрес</label>
+          <input class="form-control" type="text" id="text_address" value="127.0.0.1">
+        </div>
+        <div class="col mb-3">
+          <label for="text_port" class="form-label text-light">Локальный порт</label>
+          <input class="form-control" type="number" id="text_port" value="1000">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <input type="submit" class="btn btn-success" id="btn1" value="Экспорт">
+        </div>
+        <div class="col">
+          <input type="submit" class="btn btn-success" id="btn2" value="Экспорт c адресом и портом">
+        </div>
+      </div>
+    </div>
+  

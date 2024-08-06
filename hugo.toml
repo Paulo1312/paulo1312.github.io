@@ -1,0 +1,30 @@
+baseURL = 'https://paulo1312.github.io/'
+languageCode = 'ru_RU'
+title = 'Make Siberia Free Again'
+
+theme = 'paulotheme'
+
+[[menus.main]]
+name = 'Home'
+pageRef = '/'
+weight = 10
+
+[[menus.main]]
+name = 'Amcofixer'
+pageRef = '/amcofixer'
+weight = 20
+
+[[menus.main]]
+name = 'Ss to json'
+pageRef = '/ss_to_json'
+weight = 30
+
+
+[taxonomies]
+  tag = 'tags'
+
+
+[params]
+  [params.author]
+    name="paulo1312"
+    email="pavel_panov@riseup.net"

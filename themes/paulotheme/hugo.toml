@@ -1,0 +1,28 @@
+baseURL = 'https://example.org/'
+languageCode = 'ru'
+title = 'My New Hugo Site'
+
+[[menus.main]]
+name = 'Home'
+pageRef = '/'
+weight = 10
+
+[[menus.main]]
+name = 'Posts'
+pageRef = '/posts'
+weight = 20
+
+[[menus.main]]
+name = 'Tags'
+pageRef = '/tags'
+weight = 30
+
+[module]
+  [module.hugoVersion]
+    extended = false
+    min = "0.116.0"
+
+[params]
+  [params.author]
+    name="TestName"
+    email="TestMail@testmail.net"

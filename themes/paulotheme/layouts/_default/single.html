@@ -1,0 +1,18 @@
+{{ define "main" }}
+  <div class="container">
+    <div class="row">
+      <h1 class="display-2 text-center">{{ .Title }}</h1>
+    </div>
+  
+    {{ $dateMachine := .Date | time.Format "2006-01-02T15:04:05-07:00" }}
+    {{ $dateHuman := .Date | time.Format ":date_long" }}
+    <div class="row">
+      <span class="text-center text-secondary" datetime="{{ $dateMachine }}">{{ $dateHuman }}</span>  
+    </div>
+    <hr>
+  </div>
+  <div>
+    {{ .Content }}
+  </div>
+  {{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}
+{{ end }}
