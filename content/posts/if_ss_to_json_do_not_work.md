@@ -38,13 +38,13 @@ draft = false
 Если вы счастлив:ая обладатель:ница linux, то в репозитории есть shadowsocks-rust, в составе которого идёт инструмент ssurl
 
 Он максимально прост в использовании:
-'''
+```
 ssurl -d ss://ключ без части после порта
 
 К примеру:
 
 ssurl -d ss://base64passwordprotocol@test.vpn.org:45678
-'''
+```
 ---
 
 **pavel_panov@riseup.net**
