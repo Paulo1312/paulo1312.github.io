@@ -15,9 +15,14 @@ pageRef = '/amcofixer'
 weight = 20
 
 [[menus.main]]
-name = 'Ss to json'
+name = 'SS to json'
 pageRef = '/ss_to_json'
 weight = 30
+
+[[menus.main]]
+name = 'VGC Decoder'
+pageRef = '/vgc_decoder'
+weight = 40
 
 
 [taxonomies]
